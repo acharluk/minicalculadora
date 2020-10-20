@@ -6,7 +6,7 @@ Algoritmo minicalculadora_acl
 	Leer num_a;
 	Escribir "Introducir numero b";
 	Leer num_b;
-	Escribir "Introducir 1(suma), 2(resta), 3(multiplicaci贸n), 4(divisi贸n)";
+	Escribir "Introducir 1(suma), 2(resta), 3(multiplicaci髇), 4(divisi髇)";
 	Leer opcion;
 	
 	Segun opcion Hacer
@@ -18,11 +18,15 @@ Algoritmo minicalculadora_acl
 			Escribir "La resta de ", num_a," y de ", num_b," es de ",num_res;
 		3:
 			num_res <- num_a * num_b;
-			Escribir "La multiplicaci贸n de ", num_a," y de ", num_b," es de ",num_res;
+			Escribir "La multiplicaci髇 de ", num_a," y de ", num_b," es de ",num_res;
 		4:
-			num_res <- num_a / num_b;
-			Escribir "La divisi贸n de ", num_a," y de ", num_b," es de ",num_res;
+			Si num_B == 0 Entonces
+				Escribir 'No es posible dividir entre 0';
+			SiNo
+				num_res <- num_a / num_b;
+				Escribir "La divisi髇 de ", num_a," y de ", num_b," es de ",num_res;
+			FinSi
 		De Otro Modo:
-			Escribir "Esa operaci贸n no esta permitida";
+			Escribir "Esa operaci髇 no esta permitida";
 	FinSegun
 FinAlgoritmo
