@@ -19,6 +19,9 @@ Algoritmo minicalculadora_acl
 		3:
 			num_res <- num_a * num_b;
 			Escribir "La multiplicación de ", num_a," y de ", num_b," es de ",num_res;
+		4:
+			num_res <- num_a / num_b;
+			Escribir "La división de ", num_a," y de ", num_b," es de ",num_res;
 		De Otro Modo:
 			Escribir "Esa operación no esta permitida";
 	FinSegun
